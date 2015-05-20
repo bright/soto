@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'commander/import'
+
+require 'terminal-table'
+
+$:.push File.expand_path('../../lib', __FILE__)
+
+require 'soto'
+require 'version'
+
+HighLine.track_eof = false
+
+program :version, Soto::VERSION
+program :description, 'Read revision version of last successful TeamCity build for your project'
+
+program :help, 'Author', 'Michał Łukasiewicz <michal.lukasiewicz@gmail.com>'
+program :help, 'Website', 'http://brightinventions.pl'
+
+default_command :help
+
+require 'commands.rb'

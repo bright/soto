@@ -1,0 +1,16 @@
+# General
+*.gem
+*.rbc
+/.config
+/coverage/
+
+#IDE
+.idea
+
+# Library
+Gemfile.lock
+.ruby-version
+.ruby-gemset
+
+# RVM
+.rvmrc
