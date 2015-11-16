@@ -12,7 +12,7 @@ module Soto
       req = Net::HTTP::Get.new(path)
       req.basic_auth username, password
 
-      Net::HTTP.start(uri.host, uri.port) { |http|
+      Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == 'https') { |http|
         resp = http.request(req)
 
         if resp.code != '200'

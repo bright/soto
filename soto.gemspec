@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name = 'soto'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.executables << 'soto'
-  s.date = '2015-05-20'
+  s.date = '2015-11-16'
   s.summary = 'Extract revision number of last successful TeamCity build'
   s.description = 'Soto connects to TeamCity REST API and extracts revision number for last successful TeamCity build'
   s.authors = ['Michał Łukasiewicz']
