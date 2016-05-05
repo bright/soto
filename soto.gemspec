@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name = 'soto'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.executables << 'soto'
-  s.date = '2015-11-16'
+  s.date = '2016-05-05'
   s.summary = 'Extract revision number of last successful TeamCity build'
   s.description = 'Soto connects to TeamCity REST API and extracts revision number for last successful TeamCity build'
   s.authors = ['Michał Łukasiewicz']
@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
 
   s.add_dependency 'commander', '~> 4.3'
-  s.add_dependency 'highline', '>= 1.7.1'
+  s.add_dependency 'highline', '~> 1.7'
   s.add_dependency 'nokogiri', '~> 1.6'
 end

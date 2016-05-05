@@ -5,7 +5,7 @@ module Soto
   class Soto
     def self.read(username, password, teamcity_url, build_configuration)
 
-      path = "#{teamcity_url}/app/rest/buildTypes/id:#{build_configuration}/builds/status:SUCCESS"
+      path = "#{teamcity_url}/app/rest/buildTypes/id:#{build_configuration}/builds/status:SUCCESS,branch:default:any"
 
       uri = URI(path)
 
